@@ -48,7 +48,7 @@ Tool have mainly 2 modules:
 ## Installation Guidelines
 
 ### Docker
-Will update docker repo here
+To be updated soon
 
 
   
