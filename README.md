@@ -57,4 +57,5 @@ To be updated soon
 3. Once you have completed Step 1 or Step 2 depending on your choice, on XAMPP control panel start 'Apache' and 'MySQL' service.
 4. Open http://localhost/phpmyadmin/ or http://IP/phpmyadmin/ on the browser.
 5. Click on 'Databases' create database with name 'phishadmin'
-6. Click on 'Import' and import the file attached here with code, under /sql/ folder phishadmin.sql, and you are done with setup. Refer section 'How to use' for usability.
+6. Click on 'Import' and import the file attached here with code, under /sql/ folder phishadmin.sql, 
+7. Copy the source code available here under C:/xampp/htdocs/ folder and you are done with setup. Refer section 'How to use' for usability.
