@@ -50,7 +50,7 @@ Tool have mainly 2 modules:
 ### Docker
 To be updated soon
 
-### Manual Installation on Windows (Similar steps should work for linux distributions as well)
+### Manual Installation for Windows (similar should be applicable to Linux)
 
 1. Download XAMPP from - https://www.apachefriends.org/download.html and follow installation flow on the screen. It will install webserver and MySQL for you.
 2. If you do not want to go with XAMPP, any webserver you may have and independent installation of MySQL should suffice.
