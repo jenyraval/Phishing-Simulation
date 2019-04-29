@@ -52,7 +52,7 @@ To be updated soon
 
 ### Manual Installation on Windows
 
-1. Download XAMPP from - https://www.apachefriends.org/download.html and follow installation flow on the screen.It will install webserver and MySQL for you.
+1. Download XAMPP from - https://www.apachefriends.org/download.html and follow installation flow on the screen. It will install webserver and MySQL for you.
 2. If you do not want to go with XAMPP, any webserver you may have and independent installation of MySQL should suffice.
 3. Once you have completed Step 1 or Step 2 depending on your choice, on XAMPP control panel start 'Apache' and 'MySQL' service.
 4. Open http://localhost/phpmyadmin/ or http://IP/phpmyadmin/ on the browser.
