@@ -50,7 +50,7 @@ Tool have mainly 2 modules:
 ### Docker
 To be updated soon
 
-### Manual Installation on Windows
+### Manual Installation on Windows (Similar steps should work for linux distributions as well)
 
 1. Download XAMPP from - https://www.apachefriends.org/download.html and follow installation flow on the screen. It will install webserver and MySQL for you.
 2. If you do not want to go with XAMPP, any webserver you may have and independent installation of MySQL should suffice.
@@ -58,4 +58,7 @@ To be updated soon
 4. Open http://localhost/phpmyadmin/ or http://IP/phpmyadmin/ on the browser.
 5. Click on 'Databases' create database with name 'phishadmin'
 6. Click on 'Import' and import the file attached here with code, under /sql/ folder phishadmin.sql, 
-7. Copy the source code available here under C:\xampp\htdocs\ folder and you are done with setup. Refer section 'How to use' for usability.
+7. Copy the source code available here under C:\xampp\htdocs\ folder (path will vary for linux users) and you are done with setup. Refer section 'How to use' for usability.
+
+Admin Module - http://localhost/AdminPanel/login.php, default login credentials are admin/admin
+Client Module - http://localhost/phishClient/
