@@ -62,5 +62,5 @@ To be updated soon
 
 Refer section 'How to use' for usability.
 
-Admin Module - http://localhost/AdminPanel/login.php, default login credentials are admin/admin.
-Client Module - http://localhost/phishClient/
+(i) Admin Module - http://localhost/AdminPanel/login.php, default login credentials are admin/admin.
+(ii)Client Module - http://localhost/phishClient/
