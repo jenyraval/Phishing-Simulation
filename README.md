@@ -48,7 +48,7 @@ Tool have mainly 2 modules:
 ## Installation Guidelines
 
 ### Docker
-To be updated soon
+To be updated soon (Docker guidelines here)
 
 ### Manual Installation for Windows (similar should be applicable to Linux)
 
