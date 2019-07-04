@@ -19,7 +19,7 @@ Phishing Simulation mainly aims to increase phishing awareness by providing an i
 
 Tool have mainly 2 modules:
 1. Admin Module : Which has access to setup test and view analysis, can be accessed at at http://localhost/AdminPanel/login.php, default login credentials are admin/admin
-2. Client Module : Which only has access to tutorial and assessment, cane be accessed at http://localhost/phishClient/
+2. Client Module : Which only has access to tutorial and assessment, can be accessed at http://localhost/phishClient/
  - Tutorial (Client Module)
 	- This will have a tutorial book which introduces phishing and the general techniques used which will create awareness and educate.
 - Assessment (Client Module)
