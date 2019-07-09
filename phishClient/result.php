@@ -39,9 +39,11 @@ $testcode = $_POST['testcode'];
 $query = "insert into answer (empid,testcode,ansgiven,actualans,mode) values ('$empid','$testcode','$ansgiven','$actualans','link');";
 mysqli_query($db,$query);
 $query1 = "select count(*) from answer where testcode='$testcode' and empid='$empid' and ansgiven=actualans;";
-$result = mysqli_query($db,$query);
+$result = mysqli_query($db,$query1);
+$intresult = $result->fetch_array();
+$finalresult = intval($intresult[0]);
 
-if ($result>9)
+if ($finalresult>9)
 {
 	echo "Congratulations! You passed the test!";
 }
