@@ -37,6 +37,7 @@
    
 </html>
 <?php
+error_reporting(0);
 include('session.php');
  include_once 'config.php';
  
@@ -73,8 +74,6 @@ $email8 = "webmail@web$domain";
 $email9 = "webmail@$domain";
 $email10 = "ithelp@1$domain";
 $email11 = "admin@$domain";
-$email12 = "$firstnameemail@hr$domain";
-$email13 = "$firstnameemail@org$domain";
 
 $query1 = "insert into email (testcode,email,type,valid) values ('$testcode','$email1','it','invalid');";
 $query2 = "insert into email (testcode,email,type,valid) values ('$testcode','$email2','hr','invalid');";
@@ -87,8 +86,6 @@ $query8 = "insert into email (testcode,email,type,valid) values ('$testcode','$e
 $query9 = "insert into email (testcode,email,type,valid) values ('$testcode','$email9','it','valid');";
 $query10 = "insert into email (testcode,email,type,valid) values ('$testcode','$email10','it','invalid');";
 $query11 = "insert into email (testcode,email,type,valid) values ('$testcode','$email11','it','valid');";
-$query12 = "insert into email (testcode,email,type,valid) values ('$testcode','$email12','hr','invalid');";
-$query13 = "insert into email (testcode,email,type,valid) values ('$testcode','$email13','hr','invalid');";
 mysqli_query($db,$query1);
 mysqli_query($db,$query2);
 mysqli_query($db,$query3);
@@ -100,8 +97,6 @@ mysqli_query($db,$query8);
 mysqli_query($db,$query9);
 mysqli_query($db,$query10);
 mysqli_query($db,$query11);
-mysqli_query($db,$query12);
-mysqli_query($db,$query13);
 ?>
 <html>
 <head>
