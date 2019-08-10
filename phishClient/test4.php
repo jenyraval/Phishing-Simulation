@@ -3,11 +3,11 @@ include_once 'config.php';
 if (isset($_POST['submit'])) {
 if(isset($_POST['radio']))
 {
-$empid = $_POST['empid'];
-$ansgiven = $_POST['radio'];
-$actualans = $_POST['posneg'];
-$testcode = $_POST['testcode'];
-$m = $_POST['mode'];
+$empid = mysqli_real_escape_string($db,$_POST['empid']);
+$ansgiven = mysqli_real_escape_string($db,$_POST['radio']);
+$actualans = mysqli_real_escape_string($db,$_POST['posneg']);
+$testcode = mysqli_real_escape_string($db,$_POST['testcode']);
+$m = mysqli_real_escape_string($db,$_POST['mode']);
 if ($actualans=='neg' && $ansgiven=='reply')
 {
 	$ansgiven = 'pos';

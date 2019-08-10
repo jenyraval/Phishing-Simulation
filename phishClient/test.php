@@ -5,12 +5,11 @@
 
 include_once 'config.php'; 
 	
-$testcode = htmlspecialchars($_POST['testcode']);
-$empid = htmlspecialchars($_POST['empid']);
+$testcode = mysqli_real_escape_string($db,$_POST['testcode']);
+$empid = mysqli_real_escape_string($db,$_POST['empid']);
 $query = "insert into employee (testcode,empid) values ('$testcode','$empid');";
 if(mysqli_query($db, $query))
  {
-
 $fetch = "select * from organisation where testcode='$testcode'";
 $result = mysqli_query($db, $fetch);
 $row = mysqli_fetch_assoc($result);
@@ -20,11 +19,12 @@ $finaldomain = $row["finaldomain"];
 $url = $row["url"];
 $emailid = $row["emailid"];
 $email = $row["email"];
-//$preview = $row["preview"];	
+//$preview = $row["preview"];
+
 } 
 else
 {
-    echo "ERROR: Could not able to execute $query. " . mysqli_error($db);
+    echo "ERROR: Could not able to execute";
 } 
 $query1 = "(select questionid from questionsdb where posneg = 'neg' order by RAND() limit 5) union (select questionid from questionsdb where posneg = 'pos' order by RAND() limit 5) order by RAND()";
 $questions = mysqli_query($db, $query1);

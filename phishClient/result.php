@@ -32,10 +32,10 @@
 if (isset($_POST['submit'])) {
 if(isset($_POST['radio']))
 {
-$empid = $_POST['empid'];
-$ansgiven = $_POST['radio'];
+$empid = mysqli_real_escape_string($db,$_POST['empid']);
+$ansgiven = mysqli_real_escape_string($db,$_POST['radio']);
 $actualans = "yes";
-$testcode = $_POST['testcode'];
+$testcode = mysqli_real_escape_string($db,$_POST['testcode']);
 $query = "insert into answer (empid,testcode,ansgiven,actualans,mode) values ('$empid','$testcode','$ansgiven','$actualans','link');";
 mysqli_query($db,$query);
 $query1 = "select count(*) from answer where testcode='$testcode' and empid='$empid' and ansgiven=actualans;";
