@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+ error_reporting(0);
 include_once 'config.php';
 ?>
 <html>
@@ -57,7 +57,7 @@ include_once 'config.php';
 	</form>
    <?php
    if (isset($_POST['submit'])) {
-   $testcode1 = $_POST['testcode'];
+   $testcode1 = mysqli_real_escape_string($db,$_POST['testcode']);
    }
 	
    $query1= "select distinct empid from answer where testcode = '$testcode1'; ";
