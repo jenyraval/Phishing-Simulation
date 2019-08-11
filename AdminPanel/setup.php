@@ -23,6 +23,7 @@ Enter Domain:
 </form>
 </html>
 <?php
+error_reporting(0);
    include('session.php');
    if (isset ($_POST['orgdomain']))
    {
@@ -30,11 +31,19 @@ Enter Domain:
 $python = 'C:\\Python27\\python.exe';
 $filepath = '--dictionary C:\\xampp\\htdocs\\AdminPanel\\dnstwist-master\\dictionaries\\english.dict --format idle';
 $orgdomain = htmlspecialchars($_POST['orgdomain']);
-$cmd = "$python $pyscript $filepath $orgdomain";
 $orgname = htmlspecialchars($_POST['orgname']);
-$orgdomain = htmlspecialchars($_POST['orgdomain']);
+$orgdomainstr=str_replace('|','\|',$orgdomain);
+if (preg_match("/^(?!\-)(?:[a-zA-Z\d\-]{0,62}[a-zA-Z\d]\.){1,126}(?!\d+)[a-zA-Z\d]{1,63}$/","$orgdomainstr"))
+	{
+		$orgdomain1=$_POST['orgdomain'];
+	}
+	else
+	{
+		echo "Please enter correct domain name";
+	}
 $testcode = htmlspecialchars($_POST['testcode']);
 //echo $cmd;
+$cmd = "$python $pyscript $filepath $orgdomain1";
    $tmp = shell_exec("$cmd");
   echo "<div>";
   echo "<form method='post' action='setup2.php'>";
@@ -55,7 +64,7 @@ $testcode = htmlspecialchars($_POST['testcode']);
   echo "<input type='url' name='url' style='width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;'/><br/>";
   echo "<input type='submit' value='Submit'/>";
   echo "<input type='hidden' name='orgname' value='$orgname'/>";
-  echo "<input type='hidden' name='orgdomain' value='$orgdomain'/>";
+  echo "<input type='hidden' name='orgdomain' value='$orgdomain1'/>";
   echo "<input type='hidden' name='testcode' value='$testcode'/>";
   echo "</form>";
   echo "</div>";
