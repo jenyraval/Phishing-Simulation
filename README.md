@@ -23,7 +23,7 @@ Tool have mainly 2 modules:
  - Tutorial (Client Module)
 	- This will have a tutorial book which introduces phishing and the general techniques used which will create awareness and educate.
 - Assessment (Client Module)
-	- This will include various questions which can be phishing emails or phishing site or scenario and user will have to choose there action whether they will click it, ignore it or report it. 
+	- This will include various questions which can be phishing emails or phishing site or scenarios or SMiShing and user will have to choose there action whether they will click it, ignore it or report it. 
 	- Questions will be different for each user even under a same test code.
 	- Questions will have a fair mix of positive and negative questions.
 	- To pass the test all answers has to be right because all it takes is just one click!
