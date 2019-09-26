@@ -26,7 +26,7 @@ else
 {
     echo "ERROR: Could not able to execute";
 } 
-$query1 = "(select questionid from questionsdb where posneg = 'neg' order by RAND() limit 5) union (select questionid from questionsdb where posneg = 'pos' order by RAND() limit 5) order by RAND()";
+$query1 = "(select questionid from questionsdb where posneg = 'neg' order by RAND() limit 3) union (select questionid from questionsdb where posneg = 'pos' order by RAND() limit 3) order by RAND()";
 $questions = mysqli_query($db, $query1);
 while ($row = mysqli_fetch_assoc($questions))
 {

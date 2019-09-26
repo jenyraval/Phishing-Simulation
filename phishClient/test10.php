@@ -5,34 +5,9 @@ if(isset($_POST['radio']))
 {
 $empid = mysqli_real_escape_string($db,$_POST['empid']);
 $ansgiven = mysqli_real_escape_string($db,$_POST['radio']);
-$actualans = mysqli_real_escape_string($db,$_POST['posneg']);
+$actualans = "B";
 $testcode = mysqli_real_escape_string($db,$_POST['testcode']);
-$m = mysqli_real_escape_string($db,$_POST['mode']);
-if ($actualans=='neg' && $ansgiven=='reply')
-{
-	$ansgiven = 'pos';
-}
-else if ($actualans=='neg' && $ansgiven=='ignore')
-{
-	$ansgiven = 'pos';
-}
-else if ($actualans=='neg' && $ansgiven=='report')
-{
-	$ansgiven = 'neg';
-}
-else if ($actualans=='pos' && $ansgiven=='reply')
-{
-	$ansgiven = 'pos';
-}
-else if ($actualans=='pos' && $ansgiven=='ignore')
-{
-	$ansgiven = 'neg';
-}
-else if ($actualans=='pos' && $ansgiven=='report')
-{
-	$ansgiven = 'neg';
-}
-$query = "insert into answer (empid,testcode,ansgiven,actualans,mode) values ('$empid','$testcode','$ansgiven','$actualans','$m');";
+$query = "insert into answer (empid,testcode,ansgiven,actualans,mode) values ('$empid','$testcode','$ansgiven','$actualans','attachment');";
 mysqli_query($db,$query);
 }
 $fetch = "select * from organisation where testcode='$testcode'";
