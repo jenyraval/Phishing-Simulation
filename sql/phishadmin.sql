@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 20, 2019 at 08:17 AM
+-- Generation Time: Feb 19, 2020 at 10:16 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 5.6.39
 
@@ -77,6 +77,17 @@ CREATE TABLE `email` (
 CREATE TABLE `employee` (
   `testcode` varchar(50) NOT NULL,
   `empid` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `invite`
+--
+
+CREATE TABLE `invite` (
+  `username` varchar(500) NOT NULL,
+  `email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
