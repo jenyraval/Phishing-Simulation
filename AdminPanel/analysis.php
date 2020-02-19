@@ -1,5 +1,6 @@
 <?php
  error_reporting(0);
+ include('session.php');
 include_once 'config.php';
 ?>
 <html>
@@ -36,6 +37,7 @@ include_once 'config.php';
      <div class="navbar">
   <a href="setup.php">Setup Test Enviornment</a>
   <a href="analysis.php">Analysis</a>
+  <a href="invite.php">Invite</a>
   <a href = "logout.php">Sign Out</a>
 	 
 	</div> 

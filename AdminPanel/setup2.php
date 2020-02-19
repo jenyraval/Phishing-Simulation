@@ -30,6 +30,7 @@
 	  <div class="navbar">
   <a href="setup.php">Setup Test Enviornment</a>
   <a href="analysis.php">Analysis</a>
+   <a href="invite.php">Invite</a>
   <a href = "logout.php">Sign Out</a>
 	 
 	</div> 
