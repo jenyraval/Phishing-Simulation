@@ -41,8 +41,9 @@ mysqli_query($db, $query2);
 	<img src="header.jpg" style="width:100%;height:150px;">
 <!--	<link rel="stylesheet" href="style.css"> -->
 	 <style>
-
 </style>
+  <script type="text/javascript" src="progress.js"></script>
+	<link rel="stylesheet" type="text/css" href="progress.css">
    </head>
    <body>
    
@@ -53,17 +54,25 @@ mysqli_query($db, $query2);
 </HEAD>
 <BODY onload="noBack();" 
 	onpageshow="if (event.persisted) noBack();" onunload="">
-  
+  <p style="font-family: auto;">
    Question 1:
    Observe the website given below thoroughly, 
-   Will you refer your friend to visit this website? <br/><br/>
+   Will you refer your friend to visit this website? 	</p>
     <form action="test2.php" method="post">
+	 <span style="display: inline-block;font-family: auto;">
   <input type="radio" name="radio" value="yes" required> Yes
   &nbsp;<input type="radio" name="radio" value="no"> No 
   &nbsp; <input type="hidden" name="empid" value="<?php echo $empid; ?>" />
   <input type="hidden" name="testcode" value="<?php echo $testcode; ?>" />
-  <input type="submit" name="submit" value="Next" />
-</form>  
+     <input type="submit" name="submit" value="Next"/> 
+	    </span>
+	<div class="progress" style="width: 50%;display: inline-flex;">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="30"
+				  aria-valuemin="0" aria-valuemax="50" style="width:10%">
+				    <span > 10% Complete</span>
+				  </div>
+			  </div>
+</form>
 <iframe srcdoc="<img src='https.jpg' height=17px width=20px align=left>&nbsp;<?php echo "https://$finaldomain"; ?>" width="100%" height="20" scrolling="no" marginheight="0"> </iframe>
  <iframe src="/../AdminPanel/output.html" width="100%" height="400"> </iframe>
 

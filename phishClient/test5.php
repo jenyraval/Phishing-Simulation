@@ -74,15 +74,17 @@ $question2id = implode($interest[3]);
    <head>
       <title>Welcome Employee</title>
 	<img src="header.jpg" style="width:100%;height:150px;"> 
+	 <script type="text/javascript" src="progress.js"></script>
+	<link rel="stylesheet" type="text/css" href="progress.css">
  </head>
  <body>
  <SCRIPT type="text/javascript">
 	window.history.forward();
 	function noBack() { window.history.forward(); }
-</SCRIPT>
-  Question 5:
-   <br/>
+</SCRIPT><p style="font-family: auto;">
+  Question 5: </p>
     <form action="test6.php" method="post">
+	 <span style="display: inline-block;font-family: auto;">
   <input type="radio" name="radio" value="report" required> Report
   &nbsp;<input type="radio" name="radio" value="reply"> Click/Reply/Download
   &nbsp;<input type="radio" name="radio" value="ignore"> Ignore
@@ -91,6 +93,13 @@ $question2id = implode($interest[3]);
   <input type="hidden" name="posneg" value="<?php echo $posneg; ?>" />
   <input type="hidden" name="mode" value="<?php echo $mode; ?>" />
   <input type="submit" name="submit" value="Next" />
+  </span>
+	<div class="progress" style="width: 50%;display: inline-flex;">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="30"
+				  aria-valuemin="0" aria-valuemax="50" style="width:50%">
+				    <span > 50% Complete</span>
+				  </div>
+			  </div>
 </form>  
 <iframe srcdoc="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='logo_tiny.png'>&nbsp;&nbsp;<input type='text' name='search'>&nbsp; &nbsp;<input type='button' value='Search'><br/><img src='ribbon.jpg' height=40 width=1000 align=right><img src='gcompose.jpg' height=250 width=250 align=left><br/>
 
