@@ -45,7 +45,8 @@ $finalresult = intval($intresult[0]);
 
 if ($finalresult>9)
 {
-	echo "Congratulations! You passed the test!";
+	echo "<img src='pass.jpg' height=450 width=600 style='display: block;margin-left: auto;margin-right: auto;'/>";
+	
 }
 else 
 {
