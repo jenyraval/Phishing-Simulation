@@ -3,7 +3,7 @@ Phishing Simulation mainly aims to increase phishing awareness by providing an i
 
 ## What?
 
- - One of the objective of organizations carrying out red team assessment is to know the weakness in the IT ecosystem which includes people and network. Organization takes every effort to improve there perimeter security and patch the vulnerabilities found but the people remains the weakest link. Phishing plays vital role in understanding the security-awareness of employee. 
+ - One of the objective of organizations carrying out red team assessment is to know the weakness in the IT ecosystem which includes people and network. Organization takes every effort to improve there perimeter security and patch the vulnerabilities found but people remains the weakest link. Phishing plays vital role in understanding the security-awareness of employee. 
 - Phishing Simulation enables user to understand it without actually performing the 'live' phishing attack, by leveraging the engaging and intuitive training sessions.
 - Tool will give you a customized environment to design your test as per your requirements which make questions tailor-made for every organization and unique for each person, close to real-time phishing attack, targeted and difficult to answer, senario based and SMishing questions coverage but all of this without any actual setup. Once test is designed all the targeted audience can take the assessment and submit there answers. We will have a analysis at the end of campaign to understand the current awareness posture.
 - All it takes is just one click! So this will make us think twice before we do that one click.
