@@ -49,7 +49,7 @@ Tool have mainly 2 modules:
 ## Installation Guidelines
 
 ### Docker
-To be updated soon 
+To be updated soon (v2.0) 
 
 ### Manual Installation for Windows (similar should be applicable to Linux)
 
