@@ -21,5 +21,5 @@ Enter Employee Id: <input type="number" name="empid" style="width: 100%;padding:
 </form>
 </html>
 <?php
-      
+  //php code if only needed    
 ?>
