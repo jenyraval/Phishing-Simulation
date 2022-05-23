@@ -61,7 +61,7 @@ include_once 'config.php';
    if (isset($_POST['submit'])) {
    $testcode1 = mysqli_real_escape_string($db,$_POST['testcode']);
    }
-	
+ //employee who passed test
    $query1= "select distinct empid from answer where testcode = '$testcode1'; ";
    $query2= "select empid,COUNT(*) as total from answer where ansgiven=actualans and testcode = '$testcode1' GROUP by empid HAVING total > 9;";
    $result1 = mysqli_query($db,$query1);
@@ -98,6 +98,7 @@ include_once 'config.php';
     left: 50px;
 '></div>
 <?php
+// Number of employees who will click on the malicious links	   
  $query3 = "select empid,COUNT(*) as total from answer where ansgiven!=actualans and testcode = '$testcode1' and mode = 'link' GROUP by empid";
  $result3 = mysqli_query($db,$query3);
  $linkemp = mysqli_num_rows($result3);
@@ -131,6 +132,7 @@ include_once 'config.php';
     left: 550px;
 '></div>
 <?php
+// Number of employees who will download the dangerous attachments	   
  $query4 = "select empid,COUNT(*) as total from answer where ansgiven!=actualans and testcode = '$testcode1' and mode = 'attachment' GROUP by empid";
  $result4 = mysqli_query($db,$query4);
  $attachemp = mysqli_num_rows($result4);
